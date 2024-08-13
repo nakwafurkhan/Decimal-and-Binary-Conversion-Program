@@ -1,0 +1,56 @@
+Decimal and Binary Conversion Program
+Introduction
+This program provides an interactive command-line interface to convert numbers between decimal and binary formats. It allows users to enter numbers and see their equivalent representations in the other format. The program runs continuously, enabling multiple conversions in a single session, until the user chooses to exit.
+
+How to Use the Program
+Launch the Program: Run the script in a Python environment.
+
+Select Conversion Mode:
+
+Enter D to convert decimal numbers to binary.
+Enter B to convert binary numbers to decimal.
+Type exit to terminate the program.
+Input Numbers:
+
+In decimal mode, input decimal numbers to see their binary equivalents.
+In binary mode, input binary numbers to see their decimal equivalents.
+Enter exit in any mode to return to the main menu or to close the program.
+Program Structure
+Infinite Loop
+The program uses an infinite loop to prompt the user repeatedly for input, allowing continuous interaction without restarting the program.
+
+Exit Condition
+The program exits when the user types "exit" at the main prompt, displaying a goodbye message.
+
+Mode Selection
+Decimal to Binary Conversion Mode
+Users select this mode by entering "d" or "D".
+The program enters a secondary loop to prompt for decimal numbers for conversion.
+Conversion Process
+Input Handling:
+
+The user inputs a decimal number.
+If "exit" is typed, the program exits the loop and returns to the main menu.
+Conversion Logic:
+
+The program initializes an empty string to build the binary representation.
+It repeatedly divides the decimal number by 2, capturing the remainders, which represent binary digits.
+The remainders are prepended to form the final binary number.
+Binary to Decimal Conversion Mode
+Users select this mode by entering "b" or "B".
+The program enters a secondary loop to prompt for binary numbers for conversion.
+Conversion Process
+Input Handling:
+
+The user inputs a binary number.
+If "exit" is typed, the program exits the loop and returns to the main menu.
+Conversion Logic:
+
+The program reverses the binary string to facilitate positional calculations.
+It initializes a variable to accumulate the decimal result.
+For each binary digit, the program calculates its contribution to the decimal value using powers of 2 and adds it to the result.
+Handling Invalid Input
+The program checks for valid input at the main prompt. If the user inputs anything other than "D", "B", or "exit", it displays an error message and prompts again.
+
+Summary
+This program is a straightforward tool for learning about number conversions between decimal and binary systems. It demonstrates essential programming concepts such as loops, conditional statements, and number systems. By interacting with this program, users can gain hands-on experience in understanding how numbers are represented and converted in computer systems. This project serves as an educational resource for developing skills in algorithm design and implementation.
